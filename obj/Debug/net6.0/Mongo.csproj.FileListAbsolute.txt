@@ -1,0 +1,15 @@
+C:\School\CS403\Mongo\bin\Debug\net6.0\Mongo.exe
+C:\School\CS403\Mongo\bin\Debug\net6.0\Mongo.deps.json
+C:\School\CS403\Mongo\bin\Debug\net6.0\Mongo.runtimeconfig.json
+C:\School\CS403\Mongo\bin\Debug\net6.0\Mongo.dll
+C:\School\CS403\Mongo\bin\Debug\net6.0\Mongo.pdb
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.csproj.AssemblyReference.cache
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.GeneratedMSBuildEditorConfig.editorconfig
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.AssemblyInfoInputs.cache
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.AssemblyInfo.cs
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.csproj.CoreCompileInputs.cache
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.dll
+C:\School\CS403\Mongo\obj\Debug\net6.0\refint\Mongo.dll
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.pdb
+C:\School\CS403\Mongo\obj\Debug\net6.0\Mongo.genruntimeconfig.cache
+C:\School\CS403\Mongo\obj\Debug\net6.0\ref\Mongo.dll

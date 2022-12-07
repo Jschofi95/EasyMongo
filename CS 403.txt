@@ -1,0 +1,185 @@
+Q1 write a parse function for an if/else statement
+
+ifelse -> "if" test "then" body [elsepart]
+elsepart -> "else" body "endif"
+
+body -> ...
+test -> ...
+astIf parselfstmt (){
+
+    if (!match("if")) returns null;
+    astTest t = parseTest();
+    expct("then") ;
+    astBody b= parseBody();
+    astElse e= parseElse(); //might be null -- ok
+    return astIF(t,b,e);
+
+}
+
+astElse parseElse (){
+
+    if(!match("else")) return null;
+    astbody b = parseBody();
+    expect ("endif");
+    return astElse(b);
+}
+
+
+
+
+
+
+## 12/03/2022
+
+using database, In CS301 file, print all
+db.CS301.find()
+
+order by ascent, Using 'database1', In CS301 file, print all
+order by ascent, Using order by, In CS301 file, print all
+
+
+
+using 'database', In 'CS301' file, print 'username', order by 'ascent' and formate 
+
+
+db.CS301.find().sort().pretty()
+
+
+using database, In CS301 file, print category_code, ID
+founded_yeat !=2000   founded_year greater than 2000
+
+
+db.CS301.find()
+
+
+Using database, In CS301 file, when milestones.stoneable.name is 'Zoho', print 'category_code', do not print 'username'
+
+    db.CS301.find({milestones.stoneable.name is zoho},{catrgory_code:1, username:0, _ID:0})
+
+db.CS301.find({}, {username:0,category_code:0})
+
+using database, In CS301 file, print all, do not print ('username' and 'category_code')
+
+
+
+using database, In CS301 file, print 'username', when 'year' > '2000' and 'year' < '2400'
+
+
+
+
+tokentype:
+   comma, less, lessEqual, greater, greaterEqual,Not, String, Number, Print, This, When, Using, In, order, by, not show, equal, notEqual, ascent, descent.
+    is, EOF
+
+
+expression -> literal | unary | binary | operator
+
+
+Literal -> NUMBER | STRING | 
+Grouping -> ' STRING ' |  ","  expression  ","
+unary   -> NOT | USING | IN | WHEN | ALL | 
+binary  -> PRINT | NOT PRINT
+operator -> LESS | < | GREATER | > | LESSQUEAL | <= | GREATEREQUAL | >= | EQUAL | = | NOTEQUAL | != |AND
+
+
+
+
+statement ->printStmt | UsingStmt | InStmt | noPrintStmt | whenStmt | orderStmt | formStmt
+
+printStmt -> ”PRINT“ expression ","
+usingStmt -> "USING" expression ","
+InStmt -> "IN" expression ","
+noPrintStmt -> "DO NOT PRINT" "(" expression ")"
+WhenStmt -> "WHEN" 'STRING' operator 'STRING or NUMBER'
+orderStmt ->"ORDER BY" expression 
+formStmt -> 'FORMAT'
+
+
+
+
+Ｌｅｘｉｃａｌ　Ｇｒａｍｍａｒ:
+
+NUMER   -> DIGIT + ("." DIGIT +) ?
+DIGIT -> "0"....."9"
+STRING  -> "\"" <any char except "\"">* "\""
+ALPHA  -> "a"..."z" | "A" ... "Z" 
+
+
+
+
+
+TO DO note:
+LOKE UTILITY RULES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+db.CS301
+
+
+
+how many N
+
+
+
+
+print when there is name in CS301 file, by ascent order
+db.CS301.find((name:1,_id:0)).sort(name:1)
+
+print how many username in CS301 file.
+
+print when there is name or username in CS301 file, do not show ID
+
+print how many number_of_employees that have founded_year > 1800
+db.CS301.count()
+
+when there is -> find()
+how mnay -> count()
+in CS301 file -> db.CS301
+
+between 'print' and 'in' -> the stuff that need to be ==1
+do not show -> ==0
+
+by...order -> sort()
+
+
+
+
+
+
+
+
+
+db.CS301.find({},{name:1, username:1, _id:0})
+
+
+search file(CS301) when there is name, there is usename. show it, without ID
+
+file => CS301
+search => find()..
+when => {....}
+there is => (==1)
+without => (==0)
+show it => print
+
+
