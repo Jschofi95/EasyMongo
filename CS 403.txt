@@ -76,8 +76,8 @@ expression -> literal | unary | binary | operator
 
 
 Literal -> NUMBER | STRING | 
-Grouping -> ' STRING ' |  ","  expression  ","
-unary   -> NOT | USING | IN | WHEN | ALL | 
+Grouping -> ' STRING ' |  ","  expression  "," | USING | IN
+unary   -> NOT | WHEN | ALL | 
 binary  -> PRINT | NOT PRINT
 operator -> LESS | < | GREATER | > | LESSQUEAL | <= | GREATEREQUAL | >= | EQUAL | = | NOTEQUAL | != |AND
 
